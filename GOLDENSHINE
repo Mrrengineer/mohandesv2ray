@@ -1,0 +1,540 @@
+vmess://eyJhZGQiOiJAR29sZGVuc2hpbmUxIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjZmNmE3ODg0LThlNjEtNzY2OC0wY2MzLTM0ZDQ2MGI3NzI0ZSIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiOTAwMCIsInBzIjoiR09MREVOU0hJTkXinKjvuI8iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
+vless://6f6a7884-8e61-7668-0cc3-34d460b7724e@fr.crocodilserver.top:9011?security=reality&encryption=none&pbk=lPrSSl3vy8JAgsBqNEtsjZWi5i2nYB6t0_mnHhXTRXk&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=stackoverflow.com#%F0%9F%87%AB%F0%9F%87%B71%20%E2%9B%88%EF%B8%8FGOLDENSHINE
+vless://6f6a7884-8e61-7668-0cc3-34d460b7724e@us.crocodilserver.top:9009?security=reality&encryption=none&pbk=dRyPSezpkUiY4BofG3zONvLNP2FSxDNplnxU92kdjUg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=stackoverflow.com#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9B%88%EF%B8%8FGOLDENSHINE
+vless://6f6a7884-8e61-7668-0cc3-34d460b7724e@fi.crocodilserver.top:9008?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20%E2%9B%88%EF%B8%8FGOLDENSHINE
+vless://6f6a7884-8e61-7668-0cc3-34d460b7724e@tr.crocodilserver.top:9007?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20%E2%9B%88%EF%B8%8FGOLDENSHINE
+vless://6f6a7884-8e61-7668-0cc3-34d460b7724e@de.crocodilserver.top:9005?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%87%A9%F0%9F%87%AA1%20%E2%9B%88%EF%B8%8FGOLDENSHINE
+vless://6f6a7884-8e61-7668-0cc3-34d460b7724e@nl.crocodilserver.top:9006?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%87%B3%F0%9F%87%B11%20%E2%9B%88%EF%B8%8FGOLDENSHINE
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "892389823.webnama.com.tr",
+            "port": 1517,
+            "users": [
+              {
+                "id": "168d5a71-7b48-4c62-b6b2-68a0ad53d0b5",
+                "security": "auto",
+                "encryption": "none",
+                "email": "https://gozargah.github.io/marzban/",
+                "alterId": 0
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Accept-Encoding": [
+                  "gzip",
+                  "deflate"
+                ],
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache",
+                "Host": [
+                  "testspeed-foreign.tci.ir"
+                ]
+              },
+              "method": "GET",
+              "version": "1.1",
+              "path": [
+                "/"
+              ]
+            },
+            "type": "http"
+          }
+        }
+      }
+    }
+  ],
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": []
+  },
+  "remarks": "🇫🇮/🇺🇸/🇫🇷 All Location"
+}
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "300232332.webnama.com.tr",
+            "port": 1517,
+            "users": [
+              {
+                "id": "168d5a71-7b48-4c62-b6b2-68a0ad53d0b5",
+                "security": "auto",
+                "encryption": "none",
+                "email": "https://gozargah.github.io/marzban/",
+                "alterId": 0
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Accept-Encoding": [
+                  "gzip",
+                  "deflate"
+                ],
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache",
+                "Host": [
+                  "testspeed-foreign.tci.ir"
+                ]
+              },
+              "method": "GET",
+              "version": "1.1",
+              "path": [
+                "/"
+              ]
+            },
+            "type": "http"
+          }
+        }
+      }
+    }
+  ],
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": []
+  },
+  "remarks": "🇩🇪 Germany 1"
+}
+
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "all32-vip.f-sub.com",
+            "port": 2434,
+            "users": [
+              {
+                "id": "168d5a71-7b48-4c62-b6b2-68a0ad53d0b5",
+                "security": "auto",
+                "encryption": "none",
+                "email": "https://gozargah.github.io/marzban/",
+                "alterId": 0,
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "chess.com",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "yGgU4VVwpWk3sY54VgDxYVg77n5i-4jduHegq6PqPyA"
+        }
+      }
+    }
+  ],
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": []
+  },
+  "remarks": "🇩🇪 Germany 5"
+}
+
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "233923233.webnama.com.tr",
+            "port": 4928,
+            "users": [
+              {
+                "id": "168d5a71-7b48-4c62-b6b2-68a0ad53d0b5",
+                "security": "auto",
+                "encryption": "none",
+                "email": "https://gozargah.github.io/marzban/",
+                "alterId": 0
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Accept-Encoding": [
+                  "gzip",
+                  "deflate"
+                ],
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache",
+                "Host": [
+                  "speedtest.net"
+                ]
+              },
+              "method": "GET",
+              "version": "1.1",
+              "path": [
+                "/"
+              ]
+            },
+            "type": "http"
+          }
+        }
+      }
+    }
+  ],
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": []
+  },
+  "remarks": "🇳🇱 Netherland"
+}
+
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "0.0.0.0",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "0.0.0.0",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "230920393.f-sub.com",
+            "port": 3799,
+            "users": [
+              {
+                "id": "168d5a71-7b48-4c62-b6b2-68a0ad53d0b5",
+                "security": "auto",
+                "encryption": "none",
+                "email": "https://gozargah.github.io/marzban/",
+                "alterId": 0
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Accept-Encoding": [
+                  "gzip",
+                  "deflate"
+                ],
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache",
+                "Host": [
+                  "speedtest.net"
+                ]
+              },
+              "method": "GET",
+              "version": "1.1",
+              "path": [
+                "/"
+              ]
+            },
+            "type": "http"
+          }
+        }
+      }
+    }
+  ],
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": []
+  },
+  "remarks": "🇫🇷 France"
+}
+
+vless://0455b7c1-94f8-b81d-0061-afe2955ff9c9@nl.crcodileserver.top:8004?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%87%B3%F0%9F%87%B12%20%E2%9B%88%EF%B8%8FGOLDENSHINE
